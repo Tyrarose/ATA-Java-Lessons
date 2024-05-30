@@ -1,0 +1,48 @@
+package bpi.com.ph.model;
+
+public class Forex {
+
+    /*********
+     * 3 Types of variable declarations
+     * a. local variable - owned by the method
+     * b. instance variable - owned by the object
+     * c. static/ class variable - owned by the class
+     ********/
+
+    // input values (instance variable)
+    protected String customerName;
+    public double pesoAmount;
+    public String targetCurrency;
+
+    // computed values (instance variables)
+    public double equivalentAmout;
+    public String equivalentCurrency;
+    public boolean isValid; // default to false
+    
+
+    ////////////////////
+    // business logic computation
+    // instancee method
+    // -- whatever method being shared in the class will be shared by all objects
+
+    public void compute() {
+        isValid = true;
+        if (targetCurrency.equalsIgnoreCase("USD")) {
+            equivalentAmout = pesoAmount / 58.25;
+            equivalentCurrency = "US$";
+        } else if (targetCurrency.equalsIgnoreCase("EUR")) {
+            equivalentAmout = pesoAmount / 64.6253;
+            equivalentCurrency = "US€";
+        } else if (targetCurrency.equalsIgnoreCase("JYP")) {
+            equivalentAmout = pesoAmount / 0.3808;
+            equivalentCurrency = "US¥";
+        } else if (targetCurrency.equalsIgnoreCase("AUD")) {
+            equivalentAmout = pesoAmount / 39.6529;
+            equivalentCurrency = "A$";
+        } else {
+            System.err.println("Invalid currency. Please select valid currency.");
+            isValid = false;
+        }
+    }
+    
+}

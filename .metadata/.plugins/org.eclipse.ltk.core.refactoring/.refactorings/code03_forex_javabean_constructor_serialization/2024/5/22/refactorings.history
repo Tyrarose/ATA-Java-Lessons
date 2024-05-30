@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;bpi.com.ph.model.Forex&apos; to &apos;ForexBean&apos;&#x0D;&#x0A;- Original project: &apos;code03_forex_javabean_constructor_serialization&apos;&#x0D;&#x0A;- Original element: &apos;bpi.com.ph.model.Forex&apos;&#x0D;&#x0A;- Renamed element: &apos;bpi.com.ph.model.ForexBean&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Forex&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;bpi.com.ph.model{Forex.java[Forex" matchStrategy="1" name="ForexBean" qualified="false" references="true" similarDeclarations="false" stamp="1716991409998" textual="false" version="1.0"/>
+</session>

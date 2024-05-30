@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\tyrac\OneDrive\Documents\ATA-Java-Lessons\.metadata\.plugins\org.eclipse.jdt.core
+4292861783.index
+4284426144.index
+1865797976.index
+86614642.index
+239663301.index
